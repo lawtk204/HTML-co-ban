@@ -1,0 +1,105 @@
+
+/* Định dạng chung */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7fb;
+    color: #263238;
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 0 20px;
+    line-height: 1.6;
+}
+
+h1 {
+    text-align: center;
+    color: #1565c0;
+}
+
+section {
+    background-color: white;
+    padding: 18px 24px;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+h2 {
+    color: #1976d2;
+}
+
+/* 1. list-style-type: square */
+.subjects {
+    list-style-type: square;
+}
+
+/* 2. Số La Mã viết hoa */
+.steps {
+    list-style-type: upper-roman;
+}
+
+/* 3. Dùng hình ảnh làm dấu đánh dấu */
+/* Tạo thư mục images và đặt file bullet.png vào đó */
+.tools {
+    list-style-image: url("images/bullet.png");
+}
+
+/* 4. So sánh outside và inside */
+.outside {
+    list-style-position: outside;
+    background-color: #e3f2fd;
+    padding: 15px 15px 15px 40px;
+}
+
+.inside {
+    list-style-position: inside;
+    background-color: #fff3e0;
+    padding: 15px;
+}
+
+/* 5. Thuộc tính rút gọn list-style */
+.shorthand {
+    list-style: circle inside url("images/bullet.png");
+    padding: 15px 30px;
+}
+
+/* 6. Màu sắc và khoảng cách danh sách */
+.languages {
+    list-style-type: square;
+    background-color: #e8f5e9;
+    color: #1b5e20;
+    padding: 20px 40px;
+    border-radius: 6px;
+}
+
+.languages li {
+    margin: 8px 0;
+}
+
+/* 7. Bài tập tổng hợp */
+.roadmap {
+    list-style: upper-roman inside;
+    background-color: #e3f2fd;
+    color: #0d47a1;
+    padding: 20px;
+    border-left: 5px solid #1976d2;
+    border-radius: 6px;
+}
+
+.roadmap li {
+    margin: 10px 0;
+    padding: 8px;
+    background-color: #ffffff;
+    border-radius: 4px;
+}
+
+/* Hiển thị tốt trên điện thoại */
+@media (max-width: 600px) {
+    body {
+        margin: 15px auto;
+        padding: 0 12px;
+    }
+
+    section {
+        padding: 15px;
+    }
+}
